@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+  <title> Sign In &mdash; Certificate</title>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="<?php echo base_url('assets/vendor/adminlte/') ?>plugins/fontawesome-free/css/all.min.css">
+<!-- Theme style -->
+<link rel="stylesheet" href="	<?php echo base_url('assets/vendor/adminlte/') ?>dist/css/adminlte.min.css">
+
+  <!-- General CSS Files -->
+  <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/all.css">
+
+  <!-- Template CSS -->
+ <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+
+</head>
+
+<body class="bg-prymary">
+
+<body>
+  <div id="app">
+    <section class="section">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4">
+          <div class="login-brand">
+              <img src="assets/img/logo.png" alt="logo" width="100" class="shadow-light rounded-circle">
+            </div>
+
+            <div class="card card-info">
+              <!-- <div class="card-header"><h4>Silahkan Masuk</h4></div> -->
+
+              <div class="card-body">
+               <form  method="post" action="<?= base_url('Login/proses') ?>">
+      		 			<div class="form-group">
+      		 				<label>Username</label>
+      		 				<div class="input-group">
+      		 					<div class="input-group-prepend">
+      		 						<div class="input-group-text"><i class="fas fa-user"></i></div>
+      		 					</div>
+      		 				<input type="text" name="username" class="form-control" placeholder="Username" required="required">
+      		 				</div>
+      		 			</div>
+
+               <div class="form-group">
+         				<label>Password</label>
+         				<div class="input-group">
+         					<div class="input-group-prepend">
+         						<div class="input-group-text"><i class="fas fa-unlock-alt"></i></div>
+        		 					</div>
+        		 				<input type="password" name="password" class="form-control" placeholder="Password" required="required">
+        		 			</div>
+        		 		</div>
+
+                  <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-lg btn-block" tabindex="4">
+                      Login
+                    </button>
+                    </div>
+                    <hr>
+                    <div class="card-footer text-center py-3">
+                      <a href="<?= base_url('Register') ?>">Need an account? Sign up!</a></div>
+                    </div>
+
+                 
+                </form>
+
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- General JS Scripts -->
+  <script src="assets/bootstrap/jquery-3.3.1.min.js"></script>
+  <script src="assets/bootstrap/popper.min.js"></script>
+  <script src="assets/bootstrap/bootstrap.min.js"></script>
+  <script src="assets/bootstrap/jquery.nicescroll.min.js"></script>
+  <script src="assets/bootstrap/moment.min.js"></script>
+  <script src="assets/bootstrap/stisla.js"></script>
+
+  <!-- Template JS File -->
+  <script src="assets/bootstrap/scripts.js"></script>
+  <script src="assets/bootstrap/custom.js"></script>
+
+  <!-- Page Specific JS File -->
+  <script src="assets/bootstrap/page/index.js"></script>
+
+  <!-- Page Specific JS File -->
+
+    <!-- jQuery -->
+<script src="<?php echo base_url('assets/vendor/adminlte/') ?>plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="<?php echo base_url('assets/vendor/adminlte/') ?>plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="<?php echo base_url('assets/vendor/adminlte/') ?>dist/js/adminlte.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+  <title> Sign Up  &mdash; Certificate</title>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="<?php echo base_url('assets/vendor/adminlte/') ?>plugins/fontawesome-free/css/all.min.css">
+<!-- Theme style -->
+<link rel="stylesheet" href="	<?php echo base_url('assets/vendor/adminlte/') ?>dist/css/adminlte.min.css">
+
+  <!-- General CSS Files -->
+  <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/all.css">
+
+  <!-- Template CSS -->
+ <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+
+</head>
+
+<body class="bg-prymary">
+
+<body>
+  <div id="app">
+    <section class="section">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4">
+          <div class="login-brand">
+              <!-- <img src="assets/img/logo.png" alt="logo" width="100" class="shadow-light rounded-circle"> -->
+            </div>
+
+            <div class="card card-info">
+              <!-- <div class="card-header"><h4>Silahkan Masuk</h4></div> -->
+
+              <div class="card-body">
+               <form method="post" action="<?php echo base_url('register/proses') ?>">
+
+      		 			<div class="form-group">
+      		 				<label>Username</label>
+      		 				<div class="input-group">
+      		 					<!-- <div class="input-group-prepend">
+      		 						<div class="input-group-text"><i class="fas fa-user"></i></div>
+      		 					</div> -->
+      		 				<input type="text" name="username" class="form-control" placeholder="Username" required="required">
+      		 				</div>
+      		 			</div>
+
+               <div class="form-group">
+         				<label>Password</label>
+         				<div class="input-group">
+         					<div class="input-group-prepend">
+         						<!-- <div class="input-group-text"><i class="fas fa-unlock-alt"></i></div>
+        		 					</div> -->
+        		 				<input type="password" name="password" class="form-control" placeholder="Password" required="required">
+        		 			</div>
+        		 		</div>
+                        <p>
+                         <div class="form-group">
+      		 				<label>Full Name</label>
+      		 				<div class="input-group">
+      		 					<!-- <div class="input-group-prepend">
+      		 						<div class="input-group-text"><i class="fas fa-user"></i></div>
+      		 					</div> -->
+      		 				<input type="text" name="fullname" class="form-control" placeholder="fullname" required="required">
+      		 				</div>
+      		 			</div>
+
+                           <div class="form-group">
+      		 				<label>Email</label>
+      		 				<div class="input-group">
+      		 					<!-- <div class="input-group-prepend">
+      		 						<div class="input-group-text"><i class="fas fa-user"></i></div>
+      		 					</div> -->
+      		 				<input type="text" name="email" class="form-control" placeholder="email" required="required">
+      		 				</div>
+      		 			</div>
+
+
+                           <!-- <div class="form-group">
+      		 				<label>Level</label>
+      		 				<div class="input-group">
+      		 					<div class="input-group-prepend">
+      		 						<div class="input-group-text"><i class="fas fa-user"></i></div>
+      		 					</div>
+      		 				<input type="text" name="level" class="form-control" placeholder="level" required="required">
+      		 				</div>
+      		 			</div> -->
+
+                  <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-lg btn-block" tabindex="4">
+                      Create
+                    </button>
+                    </div>
+                    <hr>
+                    <div class="card-footer text-center py-3">
+                      <a href="<?= base_url('Login') ?>">Already have an account? SIgn Up!</a></div>
+                    </div>
+
+                 
+                </form>
+
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- General JS Scripts -->
+  <script src="assets/bootstrap/jquery-3.3.1.min.js"></script>
+  <script src="assets/bootstrap/popper.min.js"></script>
+  <script src="assets/bootstrap/bootstrap.min.js"></script>
+  <script src="assets/bootstrap/jquery.nicescroll.min.js"></script>
+  <script src="assets/bootstrap/moment.min.js"></script>
+  <script src="assets/bootstrap/stisla.js"></script>
+
+  <!-- Template JS File -->
+  <script src="assets/bootstrap/scripts.js"></script>
+  <script src="assets/bootstrap/custom.js"></script>
+
+  <!-- Page Specific JS File -->
+  <script src="assets/bootstrap/page/index.js"></script>
+
+  <!-- Page Specific JS File -->
+
+    <!-- jQuery -->
+<script src="<?php echo base_url('assets/vendor/adminlte/') ?>plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="<?php echo base_url('assets/vendor/adminlte/') ?>plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="<?php echo base_url('assets/vendor/adminlte/') ?>dist/js/adminlte.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="card mb-4">
+                    <div class="card-header d-flex align-items-center justify-content-between">
+                      <h5 class="mb-0">Tambah Events</h5>
+                      <small class="text-muted float-end"></small>
+                    </div>
+                    <div class="card-body">
+                    <?= form_open_multipart('events/fungsi_tambah_events'); ?>
+                      <form>
+                        <div class="row mb-3">
+                          <label class="col-sm-2 col-form-label" for="basic-default-company">event name</label>
+                          <div class="col-sm-10">
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="basic-default-company"
+                              name="event_name"
+                              placeholder="event name" />
+                          </div>
+                          <div class="row mb-3">
+                          <label class="col-sm-2 col-form-label" for="basic-default-company">event date</label>
+                          <div class="col-sm-10">
+                            <input
+                              type="date"
+                              class="form-control"
+                              id="basic-default-company"
+                              name="event_date"
+                              placeholder="event date" />
+                          </div>
+                       
+                          <div class="row mb-3">
+                          <label class="col-sm-2 col-form-label" for="basic-default-name">location</label>
+                          <div class="col-sm-10">
+                            <input type="text" class="form-control" id="basic-default-name" name="location" placeholder="location" />
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <label class="col-sm-2 col-form-label" for="basic-default-company">organizer</label>
+                          <div class="col-sm-10">
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="basic-default-company"
+                              name="organizer"
+                              placeholder="organizer" />
+                          </div>
+                        </div>
+                         <div class="form-text"></div>
+                          </div>
+                        </div>
+                       <div class="row justify-content-end">
+                          <div class="col-sm-10">
+                            <button type="submit" class="btn btn-primary">Send</button>
+                          </div>
+                        </div>
+                      </form>
+                      <?= form_close(); ?>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                    <div class="card mb-4">
+                    <div class="card-header d-flex align-items-center justify-content-between">
+                      <h5 class="mb-0">Tambah peserta</h5>
+                      <small class="text-muted float-end"></small>
+                    </div>
+                    <div class="card-body">
+                    <?= form_open_multipart('certificate/fungsi_tambah_certificate'); ?>
+                      <form>
+                      <div class="row mb-3">
+                          <label class="col-sm-2 col-form-label" for="basic-default-company">participant name</label>
+                          <div class="col-sm-10">
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="basic-default-company"
+                              name="participant_name"
+                              placeholder="participant name" 
+                              required="required"/>
+                          </div>
+                        <div class="row mb-3">
+                          <label class="col-sm-2 col-form-label" for="basic-default-company">event name</label>
+                          <div class="col-sm-10">
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="basic-default-company"
+                              name="event_name"
+                              placeholder="event name" 
+                              required="required"/>
+                          </div>
+                          <div class="row mb-3">
+                          <label class="col-sm-2 col-form-label" for="basic-default-company">event date</label>
+                          <div class="col-sm-10">
+                            <input
+                              type="date"
+                              class="form-control"
+                              id="basic-default-company"
+                              name="event_date"
+                              placeholder="event date"
+                              required="required" />
+                          </div>
+                          <div class="row mb-3">
+                          <label class="col-sm-2 col-form-label" for="basic-default-company">certificate text</label>
+                          <div class="col-sm-10">
+                              <textarea name="certificate_text" cols="40"  required="required"></textarea>
+                          </div>
+                         <div class="form-text"></div>
+                          </div>
+                        </div>
+                       <div class="row justify-content-end">
+                          <div class="col-sm-10">
+                            <button type="submit" class="btn btn-primary"> Tambah </button>
+                          </div>
+                        </div>
+                      </form>
+                      <?= form_close(); ?>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="form-group">
+                      <label for="inputAddress2" class="form-label">sertifikat ID</label>
+                      <select class="form-control" id="cars" name="sertifikat_id">
+                        <option selected="true" disabled="disabled">Choose Participant</option>
+                        <?php
+                          foreach($sertifikat as $sertifikat){
+                        ?>
+                        <option value="<?= $sertifikat->sertifikat_id ?>"><?= $sertifikat->event_name ?></option>
+                        <?php
+                          }
+                        ?>
+                      </select>
+                  </div>
